@@ -1,0 +1,77 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  text-align: center;
+  font-family: Tahoma;
+}
+
+#container {
+  container-type: inline-size;
+  container-name: abc;
+  display: flex;
+  align-items: stretch;
+  width: 75%;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+#sidebar {
+  width: 30%;
+  background-color: black;
+  color: white;
+}
+#sidebar:has(#a-div) {
+  background-color: red !important;
+}
+
+#main {
+  container-type: inline-size;
+  container-name: main-container;
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  color: white;
+}
+
+@container abc (min-width: 500px) {
+  #sidebar {
+    font-size: 2.5rem;
+  }
+}
+
+@container main-container (max-width: 300px) {
+  #main ul li {
+    font-size: cqw15;
+  }
+}
+
+/* ------------------------------- */
+button {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+#buy-button {
+  background-color: green;
+}
+
+#sell-button {
+  background-color: rgb(5, 199, 5);
+}
+
+#rates-button {
+  background-color: blue;
+}
+#rates-button {
+  background-color: rgb(169, 187, 164);
+}
+#get-product-button {
+  background-color: rgb(143, 187, 61);
+}
+#cancel-orders-button {
+  background-color: rgb(143, 47, 122);
+}

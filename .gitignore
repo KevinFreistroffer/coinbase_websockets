@@ -1,0 +1,11 @@
+.env
+node_modules
+./ui/node_modules
+/ui/node_modules
+/ui/.env
+ui/.env
+./server/node_modules
+/server/node_modules
+./server/.env
+/server/.env
+server/.env
